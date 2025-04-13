@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <h1>CALI HOUSE PRICES PREDICTION</h1>
+    <form action="{{ url_for('predict')}}" method="post">
+        <label for="MedInc">MedInc:</label>
+        <input type="text" id="mi" name="mi"><br>
+        <label for="houseage">HouseAge:</label>
+        <input type="text" id="hage" name="hage"><br>
+        <label for="AveRooms">AveRooms:</label>
+        <input type="text" id="avr" name="avr"><br>
+        <label for="AveBedrms">AveBedrms:</label>
+        <input type="text" id="avb" name="avb"><br>
+        <label for="Population">Population:</label>
+        <input type="text" id="pop" name="pop"><br>
+        <label for="AveOccup">AveOccup:</label>
+        <input type="text" id="avo" name="avo"><br>
+        <label for="Latitude">Latitude:</label>
+        <input type="text" id="lat" name="lat"><br>
+        <label for="Longitude">Longitude:</label>
+        <input type="text" id="long" name="long"><br>
+        <input type="submit" value="Submit">
+        <br>
+        <h2>Predicted Price is {{result}}</h2>
+    </form>
+</body>
+</html>
